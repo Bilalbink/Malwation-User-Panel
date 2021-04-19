@@ -1,4 +1,4 @@
-.navbar {
+.container {
     background: var(--black);    
     border-radius: 60px;
     margin-right: 5px;
@@ -12,12 +12,12 @@
     padding: 35px;
     color: aliceblue;
 }
-.side-items-container {
+.sideItemsContainer {
     display: flex;
     flex-direction: row;
     margin-right: 50px;
 }
-.searchbar-form {
+.searchbarForm {
     display: flex;
     align-items: center;
     border-radius: 50px;
@@ -26,7 +26,7 @@
     margin-right: 50px;
     border: 3px solid var(--white);
 }
-.search-icon {
+.searchIcon {
     padding-right: 15px;
     color: var(--white);
 }
@@ -41,28 +41,28 @@
     width:100%;
     box-sizing: border-box;
 }
-.profile-container {
+.profileContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.profile-image {
+.profileImage {
     max-width: 55px;
     max-height: 55px;
     border-radius: 50%;
     margin-right: 20px;
 }
-.profile-details {
+.profileDetails {
     color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 20px;
 }
-.profile-name {
+.profileName {
     font-size: 20px;
 }
-.profile-icon {
+.profileIcon {
     color: var(--white);
     margin-left: 20px;
 }
@@ -70,14 +70,14 @@
     position: relative;
     display: inline-block;
 }
-.dropdown-icon {
+.dropdownIcon {
     color: var(--white);
     margin-left: 20px;
 }
-.dropdown-icon:hover {
+.dropdownIcon:hover {
     cursor: pointer;
 }
-.popup-list {
+.popupList {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -95,13 +95,13 @@
 .popup {
     padding-left: 10px;
 }
-.popup-item {
+.popupItem {
     display: flex;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.popup-item:hover {
+.popupItem:hover {
     cursor: pointer;
     background-color: aqua;
 }

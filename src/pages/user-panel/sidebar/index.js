@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react'
-import './styles.modules.css'
+import styles from './sidebar.module.css'
 
 function Sidebar() {
     const [active, setActive] = useState(-1);
@@ -11,11 +11,11 @@ function Sidebar() {
     }
 
     return (
-        <div className='container'>
+        <div className={styles.container}>
             {iconList.map((icon, index) => {
                 return (
-                    <div key={index} className={index == active ? 'active-icon-container' : 'icon-container'} onClick={() => selectPage(index)}>
-                        <FeatherIcon  className={index == active ? 'active-icon' : 'sidebar-icon'} size={40} icon={icon}/>
+                    <div key={index} className={index == active ? styles.activeIconContainer : styles.iconContainer} onClick={() => selectPage(index)}>
+                        <FeatherIcon  className={index == active ? styles.activeIcon : styles.sidebarIcon} size={40} icon={icon}/>
                     </div>
                 )
             })}

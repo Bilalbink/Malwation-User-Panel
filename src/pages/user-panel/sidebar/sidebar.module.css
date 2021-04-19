@@ -6,31 +6,31 @@
     width: 150px;
     height: 900px;
 }
-.icon-container {
+.iconContainer {
     border-radius: 50%;
     padding: 15px;
     margin: 15px;
     display: flex;
 }
-.icon-container:hover {
+.iconContainer:hover {
     cursor: pointer;
     background-color: var(--black);
 }
-.icon-container:hover > .sidebar-icon {   
+.iconContainer:hover > .sidebarIcon {   
     color: var(--white);
     background-color: var(--black);
 }
-.active-icon-container {
+.activeIconContainer {
     border-radius: 50%;
     padding: 15px;
     margin: 15px;
     display: flex;
     background-color: var(--black);
 }
-.sidebar-icon {
+.sidebarIcon {
     color: var(--black);
 }
-.active-icon {
+.activeIcon {
     color: var(--white);
     background-color: var(--black);
 }
