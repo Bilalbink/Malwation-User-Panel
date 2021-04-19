@@ -1,8 +1,36 @@
 .container {
+    margin-top: 50px;
     display: flex;
-    background-color: black;
-    flex-flow: column;
-    width: 250px;
-    min-height: 100% !important;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 900px;
+}
+.icon-container {
+    border-radius: 50%;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+}
+.icon-container:hover {
+    cursor: pointer;
+    background-color: var(--black);
+}
+.icon-container:hover > .sidebar-icon {   
+    color: var(--white);
+    background-color: var(--black);
+}
+.active-icon-container {
+    border-radius: 50%;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    background-color: var(--black);
+}
+.sidebar-icon {
+    color: var(--black);
+}
+.active-icon {
+    color: var(--white);
+    background-color: var(--black);
 }
