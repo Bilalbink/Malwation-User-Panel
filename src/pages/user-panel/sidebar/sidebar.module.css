@@ -3,8 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    width: 175px;
     height: 900px;
+    /* background-color: aqua; */
 }
 .iconContainer {
     border-radius: 50%;
@@ -14,23 +15,23 @@
 }
 .iconContainer:hover {
     cursor: pointer;
-    background-color: var(--black);
+    background-color: var(--primaryColor);
 }
 .iconContainer:hover > .sidebarIcon {   
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--primaryColor);
 }
 .activeIconContainer {
     border-radius: 50%;
     padding: 15px;
     margin: 15px;
     display: flex;
-    background-color: var(--black);
+    background-color: var(--primaryColor);
 }
 .sidebarIcon {
-    color: var(--black);
+    color: var(--primaryColor);
 }
 .activeIcon {
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--primaryColor);
 }

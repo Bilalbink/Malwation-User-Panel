@@ -1,5 +1,5 @@
 .container {
-    background: var(--black);    
+    /* background: var(--primaryColor);     */
     border-radius: 60px;
     margin-right: 5px;
     margin-left: 5px;
@@ -10,7 +10,7 @@
   }
 .logo {
     padding: 35px;
-    color: aliceblue;
+    color: var(--primaryColor);
 }
 .sideItemsContainer {
     display: flex;
@@ -24,11 +24,11 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-right: 50px;
-    border: 3px solid var(--white);
+    border: 3px solid var(--primaryColor);
 }
 .searchIcon {
     padding-right: 15px;
-    color: var(--white);
+    color: var(--primaryColor);
 }
 .searchbar {
     height: 50px;
@@ -37,7 +37,7 @@
     font-size: 16px;
     font-weight: 100;
     background: transparent;
-    color: var(--white);
+    color: var(--primaryColor);
     width:100%;
     box-sizing: border-box;
 }
@@ -53,7 +53,7 @@
     margin-right: 20px;
 }
 .profileDetails {
-    color: var(--white);
+    color: var(--primaryColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
     font-size: 20px;
 }
 .profileIcon {
-    color: var(--white);
+    color: var(--primaryColor);
     margin-left: 20px;
 }
 .dropdown {
@@ -71,42 +71,9 @@
     display: inline-block;
 }
 .dropdownIcon {
-    color: var(--white);
+    color: var(--primaryColor);
     margin-left: 20px;
 }
 .dropdownIcon:hover {
     cursor: pointer;
 }
-.popupList {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    background-color: #555;
-    color: var(--white);
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    top: 125%;
-    right: 0%;
-    margin-left: -80px;
-}
-.popup {
-    padding-left: 10px;
-}
-.popupItem {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.popupItem:hover {
-    cursor: pointer;
-    background-color: aqua;
-}
-hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 200px;
-  }

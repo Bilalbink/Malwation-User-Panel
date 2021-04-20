@@ -1,7 +1,9 @@
 :root {
-  --black: #222222;
-  --grey: #636262;
+  --primaryColor: #222222;
+  --primaryColorLight: #383838;
+  --secondaryColor: #636262;
   --white: #ffffff;
+  --background: #F2F5FA;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   font-family: 'Lexend', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 code {

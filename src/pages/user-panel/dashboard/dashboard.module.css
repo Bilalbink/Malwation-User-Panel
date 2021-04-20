@@ -1,6 +1,13 @@
 .container {
     flex: 1;
-    background-color: black;
+    background-color: var(--white);
     border-radius: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.headerContainer {
     margin: 20px;
+    display: flex;
+    flex-direction: row;
 }

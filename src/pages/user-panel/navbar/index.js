@@ -3,6 +3,8 @@ import FeatherIcon from 'feather-icons-react'
 import DefaultProfile from '../../../assets/images/defaultProfile.jpg'
 import styles from './navbar.module.css'
 
+import Dropdown from './dropdown/index'
+
 function Navbar() {
     const [dropdown, setDropdown] = useState(false);
     return (
@@ -26,21 +28,7 @@ function Navbar() {
                     <div className={styles.dropdown} onClick={() => setDropdown(!dropdown)}>
                         <FeatherIcon className={styles.dropdownIcon} size={35} icon={dropdown ? 'chevron-up' : 'chevron-down'} />
                         {dropdown ?
-                            <div className={styles.popupList}>
-                                <div className={styles.popupItem}>
-                                    <FeatherIcon className={styles.profileIcon} size={25} icon="user" />
-                                    <span className={styles.popup}>My Profile</span>
-                                </div>
-                                <div className={styles.popupItem}>
-                                    <FeatherIcon className={styles.profileIcon} size={25} icon="settings" />
-                                    <span className={styles.popup}>Settings</span>
-                                </div>
-                                <hr></hr>
-                                <div className={styles.popupItem}>
-                                    <FeatherIcon className={styles.profileIcon} size={25} icon="log-out" />
-                                    <span className={styles.popup}>Logout</span>
-                                </div>
-                            </div>
+                            <Dropdown />
                             :
                             null
                         }
