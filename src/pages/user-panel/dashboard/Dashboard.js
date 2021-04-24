@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './dashboard.module.css'
-import Header from './header/index'
+import styles from './Dashboard.module.css'
+import Header from './header/Header'
 
-function Dashboard() {
+const Dashboard = () => {
     const headerData = [
         {
             icon: 'plus-circle',

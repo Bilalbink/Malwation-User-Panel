@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './dropdown.module.css'
+import styles from './Dropdown.module.css'
 import FeatherIcon from 'feather-icons-react'
 
-function Dropdown() {
+const Dropdown = () => {
     return (
     <div className={styles.popupList}>
         <div className={styles.popupItem}>

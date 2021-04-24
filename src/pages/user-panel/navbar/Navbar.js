@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import FeatherIcon from 'feather-icons-react'
 import DefaultProfile from '../../../assets/images/defaultProfile.jpg'
-import styles from './navbar.module.css'
+import styles from './Navbar.module.css'
 
-import Dropdown from './dropdown/index'
+import Dropdown from './dropdown/Dropdown'
 
-function Navbar() {
+const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
     return (
         <div className={styles.container}>

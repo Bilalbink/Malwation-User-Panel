@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from './navbar/index'
-import Sidebar from './sidebar/index'
-import Dashboard from './dashboard'
-import styles from './userPanel.module.css'
+import React, { useEffect } from 'react'
+import Navbar from './navbar/Navbar'
+import Sidebar from './sidebar/Sidebar'
+import Dashboard from './dashboard/Dashboard'
+import styles from './UserPanel.module.css'
 
-function UserPanel() {
+const UserPanel = () => {
 
     useEffect(() => {
         document.title = "User Panel"

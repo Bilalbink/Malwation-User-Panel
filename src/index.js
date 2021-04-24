@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import UserPanel from './pages/user-panel/index';
+import UserPanel from './pages/user-panel/UserPanel';
 
 ReactDOM.render(
   <React.StrictMode>
