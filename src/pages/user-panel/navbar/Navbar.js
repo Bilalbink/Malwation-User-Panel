@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FeatherIcon from 'feather-icons-react'
 import DefaultProfile from '../../../assets/images/defaultProfile.jpg'
+import Logo from '../../../assets/images/logo.png'
 import styles from './Navbar.module.css'
 
 import Dropdown from './dropdown/Dropdown'
@@ -9,7 +10,7 @@ const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
     return (
         <div className={styles.container}>
-            <div className={styles.logo}>UPANEL</div>
+            <a href='https://www.freepik.com/vectors/logo'><img  className={styles.logo} alt="Logo" src={Logo} /></a>
             <div className={styles.sideItemsContainer}>
                 <div className={styles.searchbarForm}>
                     <FeatherIcon className={styles.searchIcon} size={35} icon="search" />

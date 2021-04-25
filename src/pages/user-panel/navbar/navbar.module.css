@@ -9,8 +9,9 @@
     align-items: center;
   }
 .logo {
-    padding: 35px;
-    color: var(--primaryColor);
+    margin-left: 25px;
+   max-width: 50px;
+   max-height: 50px;
 }
 .sideItemsContainer {
     display: flex;
