@@ -7,7 +7,7 @@ import styles from './UserPanel.module.css'
 const UserPanel = () => {
 
     useEffect(() => {
-        document.title = "User Panel"
+        document.title = "RightBrain"
     }, []);
 
     return (

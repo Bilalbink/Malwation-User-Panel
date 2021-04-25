@@ -19,13 +19,14 @@
     margin-right: 50px;
 }
 .searchbarForm {
+    max-height: 45px;
     display: flex;
     align-items: center;
     border-radius: 50px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: 50px;
-    border: 3px solid var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 .searchIcon {
     padding-right: 15px;
@@ -35,11 +36,11 @@
     height: 50px;
     border-radius: 50px;
     border: 0px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 100;
     background: transparent;
     color: var(--primaryColor);
-    width:100%;
+    width:75%;
     box-sizing: border-box;
 }
 .searchbar::placeholder {
@@ -51,8 +52,8 @@
     align-items: center;
 }
 .profileImage {
-    max-width: 55px;
-    max-height: 55px;
+    max-width: 40px;
+    max-height: 40px;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -64,11 +65,14 @@
     margin-right: 20px;
 }
 .profileName {
-    font-size: 20px;
+    font-size: 16px;
 }
 .profileIcon {
     color: var(--primaryColor);
     margin-left: 20px;
+}
+.profilePosition {
+    font-size: 14px;
 }
 .dropdown {
     position: relative;

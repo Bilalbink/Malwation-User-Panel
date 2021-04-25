@@ -7,7 +7,7 @@ function HeaderCard(props) {
     return (
         <div className={styles.container}>
             <div className={styles.iconContainer}>
-                <FeatherIcon className={styles.icon} size={50} icon={props.item.icon} />
+                <FeatherIcon className={styles.icon} size={35} icon={props.item.icon} />
             </div>
             <div className={styles.textContainer}>
                 <label className={styles.topText}>

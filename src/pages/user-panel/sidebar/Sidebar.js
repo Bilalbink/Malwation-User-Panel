@@ -15,7 +15,7 @@ const Sidebar = () => {
             {iconList.map((icon, index) => {
                 return (
                     <div key={index} className={index === active ? styles.activeIconContainer : styles.iconContainer} onClick={() => selectPage(index)}>
-                        <FeatherIcon  className={index === active ? styles.activeIcon : styles.sidebarIcon} size={40} icon={icon}/>
+                        <FeatherIcon  className={index === active ? styles.activeIcon : styles.sidebarIcon} size={35} icon={icon}/>
                     </div>
                 )
             })}

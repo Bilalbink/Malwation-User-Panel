@@ -13,7 +13,7 @@ const Navbar = () => {
             <a href='https://www.freepik.com/vectors/logo'><img  className={styles.logo} alt="Logo" src={Logo} /></a>
             <div className={styles.sideItemsContainer}>
                 <div className={styles.searchbarForm}>
-                    <FeatherIcon className={styles.searchIcon} size={35} icon="search" />
+                    <FeatherIcon className={styles.searchIcon} size={25} icon="search" />
                     <input size={35} className={styles.searchbar} type="text" placeholder="Search" />
                 </div>
                 <div className={styles.profileContainer}>
@@ -22,12 +22,12 @@ const Navbar = () => {
                         <label className={styles.profileName}>
                             Jon Doe
                         </label>
-                        <label>
+                        <label className={styles.profilePosition}>
                             Frontend Developer
                         </label>
                     </div>
                     <div className={styles.dropdown} onClick={() => setDropdown(!dropdown)}>
-                        <FeatherIcon className={styles.dropdownIcon} size={35} icon={dropdown ? 'chevron-up' : 'chevron-down'} />
+                        <FeatherIcon className={styles.dropdownIcon} size={25} icon={dropdown ? 'chevron-up' : 'chevron-down'} />
                         {dropdown ?
                             <Dropdown />
                             :
