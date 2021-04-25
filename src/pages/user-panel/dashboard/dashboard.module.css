@@ -5,6 +5,13 @@
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .headerContainer {
     margin: 20px;
