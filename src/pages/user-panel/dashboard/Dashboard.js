@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from './Dashboard.module.css'
+
 import Header from './header/Header'
 import Graph from './graph/Graph'
 import Transactions from './transactions/Transactions'
+import NotificationBar from './notificationBar/NotificationBar'
+import InfoCard from './infoCard/InfoCard'
 
 const Dashboard = () => {
     const headerData = [
@@ -26,6 +29,48 @@ const Dashboard = () => {
             name: 'Savings',
             amount: '800 TRY',
         }
+    ];
+
+    const graphData = [
+        {
+            name: 'Mon',
+            amount: 50
+        },
+        {
+            name: 'Tue',
+            amount: 100
+        },
+        {
+            name: 'Wed',
+            amount: 65
+        },
+        {
+            name: 'Thu',
+            amount: 35
+        },
+        {
+            name: 'Fri',
+            amount: 200
+        },
+        {
+            name: 'Sat',
+            amount: 65
+        },
+        {
+            name: 'Sun',
+            amount: 90
+        },
+    ];
+
+    const graphDetailData = [
+        {
+            date: '10 Friday 2021',
+            amount: 200
+        },
+        {
+            date: '9 Thursday 2021',
+            amount: 50
+        },
     ]
 
     return (
@@ -39,10 +84,24 @@ const Dashboard = () => {
                     })
                     }
                 </div>
-                <Graph />
-                <Transactions />
+                <div className={styles.graphContainer}>
+                    <Graph graphData={graphData} />
+                    <div>
+                        {
+                            graphDetailData.map((item, index) => {
+                                return (
+                                    <InfoCard key={index} item={item} />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+                <div className={styles.transactionsContainer}>
+                    <Transactions />
+                </div>
+
             </div>
-            <div>asdasdasdasd</div>
+            <NotificationBar />
         </div>
     )
 }

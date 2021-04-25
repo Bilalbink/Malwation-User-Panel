@@ -1,6 +1,6 @@
 .container {
-    /* background: var(--primaryColor);     */
     border-radius: 60px;
+    padding-top: 20px;
     margin-right: 5px;
     margin-left: 5px;
     display: flex;
@@ -40,6 +40,9 @@
     color: var(--primaryColor);
     width:100%;
     box-sizing: border-box;
+}
+.searchbar::placeholder {
+    color: var(--primaryColor);
 }
 .profileContainer {
     display: flex;

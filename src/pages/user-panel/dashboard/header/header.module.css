@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--background);
+    background-color: white;
     width: 300px;
     height: 125px;
     border-radius: 50px;
@@ -8,13 +8,14 @@
     align-items: center;
     margin: 25px;
     /* flex-flow: column; */
+    filter: drop-shadow(10px 10px 10px #2424);
 }
 .iconContainer {
     display: flex;
     align-items: center;
     padding: 10px;
     margin: 25px;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     border-radius: 25px;
 }
 .icon {
@@ -26,10 +27,11 @@
     flex-direction: column;
 }
 .topText {
+    color: var(--secondaryColor);
     font-size: 18px;
 }
 .priceText {
     font-size: 25px;
     font-weight: 500;
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
 }

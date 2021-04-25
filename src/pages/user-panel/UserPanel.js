@@ -11,13 +11,13 @@ const UserPanel = () => {
     }, []);
 
     return (
-        <>
+        <div className={styles.container}>
             <Navbar />
-            <div className={styles.container}>
+            <div className={styles.bottomContainer}>
                 <Sidebar />
                 <Dashboard />
             </div>
-        </>
+        </div>
     )
 }
 
